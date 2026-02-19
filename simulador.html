@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <h2>Acceso Universitario</h2>
+        <a href="index.html">🏫 Universidades</a>
+        <a href="simulador.html">📊 Simulador</a>
+        <a href="favoritos.html">⭐ Favoritos</a>
+    </aside>
+
+    <main class="contenido">
+
+        <h1>Simulador General ICFES</h1>
+
+        <div class="simulador-box">
+            <input type="number" id="puntaje" placeholder="Ingresa tu puntaje ICFES ">
+            <button onclick="simular()">Simular</button>
+            <p id="resultado"></p>
+        </div>
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+    cargarProgramas();
+</script>
+
+</body>
+</html>

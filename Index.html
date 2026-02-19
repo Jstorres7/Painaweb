@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Acceso Universitario</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+<body class="fondo">
+    <div id="estadisticas"></div>
+    <a href="#" onclick="cerrarSesion()">Cerrar sesión</a>
+    <section id="listaFavoritos"></section>
+
+      <div id="mapa" style="height:400px; margin-bottom:30px; border-radius:20px;"></div>
+      
+<div class="filtros">
+    <input type="text" id="buscarCiudad" placeholder="Buscar por ciudad">
+    <select id="filtroDepartamento">
+        <option value="Cundinamarca">Cundinamarca</option>
+        <option value="Antioquia">Antioquia</option>
+        <option value="Valle del Cauca">Valle del Cauca</option>
+        <option value="Santander">Santander</option>
+        <option value="Boyacá">Boyacá</option>
+        <option value="Risaralda">Risaralda</option>
+        <input type="text" id="buscarCarrera" placeholder="Buscar por carrera">
+
+        <select id="ordenRanking">
+            <option value="">Ordenar por ranking</option>
+            <option value="asc">Mejor ranking</option>
+            <option value="desc">Menor ranking</option>
+        </select>
+    </select>
+    <button onclick="aplicarFiltros()">Buscar</button>
+</div>
+
+<div class="layout">
+    <aside class="sidebar">
+        <h2>Acceso Universitario</h2>
+        <a href="index.html">Universidades</a>
+    </aside>
+
+    <main class="contenido">
+        <h1>Universidades Públicas de Colombia</h1>
+        <p>Seleccione una universidad para ver información completa</p>
+
+        <section id="listaUniversidades" class="cards-container"></section>
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+    verificarSesion();
+    cargarUniversidades(); 
+</script>
+
+</body>
+
+</html>

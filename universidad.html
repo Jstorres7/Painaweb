@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Información Universidad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="fondo">
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <h2>Acceso Universitario</h2>
+        <a href="index.html">Volver a Universidades</a>
+    </aside>
+
+    <main class="contenido">
+       <h1 id="nombreUni"></h1>
+
+    <button onclick="agregarFavorito()"> Agregar a favoritos</button>
+
+    <div class="tabs">
+    <button onclick="mostrarTab('info')">Información</button>
+    <button onclick="mostrarTab('programas')">Programas</button>
+    <button onclick="mostrarTab('puntaje')">Puntaje</button>
+    <button onclick="mostrarTab('contacto')">Contacto</button>
+</div>
+
+<div id="contenidoTab"></div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+    verificarSesion();
+    cargarUniversidades(); 
+</script>
+
+</body>
+</html>
