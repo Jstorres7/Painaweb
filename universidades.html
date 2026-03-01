@@ -2,40 +2,41 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Universidades</title>
-    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Lista de universidades"> 
+    <title>Universidades de España</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<nav class="navbar">
-    <h2>Acceso Universitario</h2>
-    <div>
-        <a href="index.html">Simulador</a>
-        <a href="universidades.html">Universidades</a>
-        <a href="favoritos.html">Favoritos</a>
-    </div>
-</nav>
-
-<div class="filtro-box">
-    <select id="filtroCiudad" onchange="filtrarUniversidades()">
-        <option value="">Todas las ciudades</option>
-    </select>
-</div>
-
-<section id="listaUniversidades" class="cards-container"></section>
-
-<h1 style="text-align:center; margin-top:30px;">
-    Universidades Públicas Destacadas
-</h1>
-
-<section id="listaUniversidades" class="resultados"></section>
-
-<script src="script.js"></script>
-<script>
-    cargarCiudades();
-    mostrarUniversidades();
-</script>
+    <header>
+        <h1>Universidades de España</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Lista de Universidades</h2>
+            <article>
+                <h3>Universidad Complutense de Madrid</h3>
+                <p>Fundada en 1499, es una de las universidades más antiguas de España.</p>
+            </article>
+            <article>
+                <h3>Universidad de Barcelona</h3>
+                <p>Ofrece una amplia gama de programas académicos y de investigación.</p>
+            </article>
+            <article>
+                <h3>Universidad de Valencia</h3>
+                <p>Conocida por su enfoque en la innovación y el desarrollo sostenible.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Jstorres7. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
